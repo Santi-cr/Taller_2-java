@@ -18,10 +18,10 @@ public class Mina {
         
         do{
             System.out.println("\n Menú"
-            + "\n 1.Registar Jornada"
-            + "\n 2.Registar Novedad"
-            + "\n 3.Salir");
-            System.out.print("Elija una opcion");
+            + "\n 1.Register Day"
+            + "\n 2.Register News"
+            + "\n 3.Go out);
+            System.out.print("Choose an option");
             option = scanner.nextInt();
             scanner.nextLine();
 
@@ -35,10 +35,10 @@ public class Mina {
                     NoveltyRegister();
                     break;
                 case 3:
-                    System.out.println("Saliendo del programa");
+                    System.out.println("Exiting the program");
                     break;
                 default:
-                    System.out.println("Opcion Incorrecta");
+                    System.out.println("Incorrect Option");
                }
         
         }
