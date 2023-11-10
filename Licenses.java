@@ -35,13 +35,13 @@ public class Licenses extends Worker {
         
         do{
             System.out.println("\n Menú Novedades"
-            + "\n 1.Licencias Temporales"
-            + "\n 2.Licencia de Maternidad"       
-            + "\n 3.Licencia de Paternidad" 
-            + "\n 4.Incapacidades"
-            + "\n 5.Vacaciones"
-            + "\n 6.Permisos");
-            System.out.print("Elija una opcion");
+            + "\n 1.Temporary Licenses"
+            + "\n 2.Maternity Licence"       
+            + "\n 3.Paternity Licence" 
+            + "\n 4.Disabilities"
+            + "\n 5.Vacations"
+            + "\n 6.Permissions");
+            System.out.print("Choose an option");
             option = scanner.nextInt();
             scanner.nextLine();
 
@@ -67,7 +67,7 @@ public class Licenses extends Worker {
                     Permissions();
                    
                 default:
-                    System.out.println("Opcion Incorrecta");
+                    System.out.println("wrong option");
                }
         
         }
@@ -83,7 +83,7 @@ public class Licenses extends Worker {
             int Days=1;
             
             if(Days > 4){
-                System.out.println("Debe tomar vacaciones");
+                System.out.println("must take vacation");
             }
             
             
@@ -93,14 +93,14 @@ public class Licenses extends Worker {
          
             int Days = 1;
             if(Days <= 180){
-                System.out.println("Le restan " + (180 - Days) + "días de Licencia");
+                System.out.println("they remain " + (180 - Days) + "days of License");
             }
     }
     
         private static void RegisterPaternalLeave() {
          int Days = 1;
          if(Days<=15){
-             System.out.println("lleva" + (15 + Days) + "días de licencia");
+             System.out.println("carry" + (15 + Days) + "days of leave");
              Days++;
          }
     }
@@ -108,14 +108,14 @@ public class Licenses extends Worker {
         private static void Incapacity() {
          int Days=1;
          if(Days <=20){
-             System.out.println("le quedan "+ (20 - Days) + "días de incapacidad");
+             System.out.println("are left "+ (20 - Days) + "days of disability");
          }
     }
         
         private static void Vacation() {
          int Days = 1;
          if(Days < 15){
-             System.out.println("le quedan "+ (15 - Days) + "días de vacaciones");
+             System.out.println("are left "+ (15 - Days) + "holidays");
          }
             
     }
@@ -123,10 +123,10 @@ public class Licenses extends Worker {
          int Days = 1;
         
          if(Days <=5){
-             System.out.println("Permiso aceptado");
+             System.out.println("permission accepted");
          }else{
              if(Days > 5){
-                 System.out.println("Solicite un dia de vacaciones o una licencia temporal ");
+                 System.out.println("Request a vacation day or temporary leave ");
              }
          }
     }
