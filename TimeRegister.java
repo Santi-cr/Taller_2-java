@@ -30,19 +30,19 @@ public class TimeRegister extends Worker {
      
     public static void JourneyRegister(){
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Ingrese el nombre del empleado");
+    System.out.println("Enter the employee's name");
     String name = scanner.nextLine();
-    System.out.println("Ingrese la cedula del empleado");
+    System.out.println("Enter the employee's ID");
     int idCard = scanner.nextInt();
     Worker worker = new Worker(name, idCard);
     
     
-    System.out.println("Ingrese la fecha de inicio (formato dd/mm/yy  hh:mm): ");
+    System.out.println("Enter start date (Format dd/mm/yy  hh:mm): ");
     String startDateA = scanner.nextLine();
     LocalDateTime startDate = LocalDateTime.parse
     (name, DateTimeFormatter.ISO_DATE);
     
-    System.out.println("Ingrese la fecha de finalización (formato dd/mm/yy  hh:mm): ");
+    System.out.println("Enter the end date (Format dd/mm/yy  hh:mm): ");
     String departureDateA = scanner.nextLine();
     LocalDateTime departureDate = LocalDateTime.parse
     (name, DateTimeFormatter.ISO_DATE);
@@ -51,7 +51,7 @@ public class TimeRegister extends Worker {
             java.time.temporal.ChronoUnit.HOURS);
      
     if(hoursWorked < 8){
-        System.out.println("Alerta: Faltan " + (8 - hoursWorked)+ "horas por completar");
+        System.out.println("Alert: Missing " + (8 - hoursWorked)+ "hours to complete");
     }  
 }
 }
